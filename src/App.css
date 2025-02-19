@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  gap: 2px;
+}
+.btnStart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.btnMobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.btnLDR {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-top: 5px;
+}
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+}
+.snake {
+  background-color: green;
+}
+.food {
+  background-color: red;
+}
+.installContainer {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.installText {
+  text-align: center;
+  color: white;
+}
+.installBtn {
+  background-color: teal;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .btnMobile {
+    display: flex;
+  }
+}
