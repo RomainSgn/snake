@@ -65,11 +65,11 @@ body {
 }
 @media (max-width: 1024px) {
   .game-board {
-    gap: 1px;
+    gap: 0px;
   }
   .cell {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
   }
   .btnMobile {
     display: flex;
