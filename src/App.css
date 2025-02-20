@@ -35,12 +35,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 110%;
+  width: 100%;
   margin-top: 5px;
-}
-.dirBtn {
-  width: 150px;
-  height: 100px;
 }
 .cell {
   width: 20px;
@@ -77,5 +73,9 @@ body {
   }
   .btnMobile {
     display: flex;
+  }
+  .dirBtn {
+    width: 125px;
+    height: 100px;
   }
 }
