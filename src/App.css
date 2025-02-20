@@ -13,6 +13,7 @@ body {
 }
 .game-board {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(20, 20px);
   grid-template-rows: repeat(20, 20px);
   gap: 2px;
@@ -34,8 +35,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 110%;
   margin-top: 5px;
+}
+.dirBtn {
+  width: 150px;
+  height: 100px;
 }
 .cell {
   width: 20px;
@@ -63,6 +68,9 @@ body {
   color: white;
 }
 @media (max-width: 1024px) {
+  .game-board {
+    width: 90%;
+  }
   .btnMobile {
     display: flex;
   }

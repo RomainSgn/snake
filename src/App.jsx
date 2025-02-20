@@ -207,11 +207,11 @@ const SnakeGame = () => {
         : ""}
       </div>
       <div className='btnMobile'>
-        <button onClick={() => direction !== "DOWN" && setDirection("UP")}>Up</button>
+        <button className='dirBtn' onClick={() => direction !== "DOWN" && setDirection("UP")}>Up</button>
         <div className='btnLDR'>
-          <button onClick={() => direction !== "RIGHT" && setDirection("LEFT")}>Left</button>
-          <button onClick={() => direction !== "UP" && setDirection("DOWN")}>Down</button>
-          <button onClick={() => direction !== "LEFT" && setDirection("RIGHT")}>Right</button>
+          <button className='dirBtn' onClick={() => direction !== "RIGHT" && setDirection("LEFT")}>Left</button>
+          <button className='dirBtn' onClick={() => direction !== "UP" && setDirection("DOWN")}>Down</button>
+          <button className='dirBtn' onClick={() => direction !== "LEFT" && setDirection("RIGHT")}>Right</button>
         </div>
       </div>
     </>
