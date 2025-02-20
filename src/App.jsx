@@ -65,13 +65,25 @@ const SnakeGame = () => {
         case "ArrowUp":
           if (lastDirection !== "DOWN") newDirection = "UP"; 
           break;
+        case "z":
+          if (lastDirection !== "DOWN") newDirection = "UP"; 
+          break;
         case "ArrowDown":
+          if (lastDirection !== "UP") newDirection = "DOWN";
+          break;
+        case "s":
           if (lastDirection !== "UP") newDirection = "DOWN";
           break;
         case "ArrowLeft":
           if (lastDirection !== "RIGHT") newDirection = "LEFT";
           break;
+        case "q":
+          if (lastDirection !== "RIGHT") newDirection = "LEFT";
+          break;
         case "ArrowRight":
+          if (lastDirection !== "LEFT") newDirection = "RIGHT";
+          break;
+        case "d":
           if (lastDirection !== "LEFT") newDirection = "RIGHT";
           break;
         default:
