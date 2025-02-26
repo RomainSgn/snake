@@ -39,8 +39,6 @@ body {
   margin-top: 5px;
 }
 .cell {
-  width: 20px;
-  height: 20px;
   background-color: #ccc;
 }
 .snake {
@@ -65,11 +63,8 @@ body {
 }
 @media (max-width: 1024px) {
   .game-board {
-    gap: 0px;
-  }
-  .cell {
-    width: 15px;
-    height: 15px;
+    grid-template-columns: repeat(30, 10px);
+    grid-template-rows: repeat(30, 10px);
   }
   .btnMobile {
     display: flex;
