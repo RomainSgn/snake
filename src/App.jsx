@@ -45,7 +45,7 @@ const SnakeGame = () => {
   };
 
   const [isPlaying, setIsPlaying] = useState(false); // Le jeu commence en pause
-  const [snake, setSnake] = useState([{x: 10, y: 10}]); // Initialisation du serpent
+  const [snake, setSnake] = useState([{x: 15, y: 15}]); // Initialisation du serpent
   const [food, setFood] = useState({x: 3, y: 3}); // Initialisation de la food
   const [direction, setDirection] = useState("RIGHT"); // Initialisation de la direction
   const [lastDirection, setLastDirection] = useState("RIGHT"); // Sauvegarde de la dernière direction
@@ -147,8 +147,8 @@ const SnakeGame = () => {
     
     do {
       newFood = {
-        x: Math.floor(Math.random() * 20),
-        y: Math.floor(Math.random() * 20),
+        x: Math.floor(Math.random() * 30),
+        y: Math.floor(Math.random() * 30),
       };
   
       // Vérifie si la position est sur le serpent
@@ -185,7 +185,7 @@ const SnakeGame = () => {
       }
       setSpeed(100) // Réinitialise la speed à 100
       setScore(0); // Réinitialise le score à 0
-      setSnake([{ x: 10, y: 10 }]); // Réinitialise le serpent
+      setSnake([{ x: 15, y: 15 }]); // Réinitialise le serpent
       setFood(getRandomFoodPosition(snake)); // Nouvelle nourriture
       setDirection("RIGHT"); // Réinitialise la direction
     }
