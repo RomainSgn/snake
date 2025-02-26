@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 
-const BOARD_SIZE = 20;  // Taille de la grille de jeu
+const BOARD_SIZE = 30;  // Taille de la grille de jeu
 
 const SnakeGame = () => {
 
@@ -68,10 +68,16 @@ const SnakeGame = () => {
         case "z":
           if (lastDirection !== "DOWN") newDirection = "UP"; 
           break;
+        case "Z":
+          if (lastDirection !== "DOWN") newDirection = "UP"; 
+          break;
         case "ArrowDown":
           if (lastDirection !== "UP") newDirection = "DOWN";
           break;
         case "s":
+          if (lastDirection !== "UP") newDirection = "DOWN";
+          break;
+        case "S":
           if (lastDirection !== "UP") newDirection = "DOWN";
           break;
         case "ArrowLeft":
@@ -80,10 +86,16 @@ const SnakeGame = () => {
         case "q":
           if (lastDirection !== "RIGHT") newDirection = "LEFT";
           break;
+        case "Q":
+          if (lastDirection !== "RIGHT") newDirection = "LEFT";
+          break;
         case "ArrowRight":
           if (lastDirection !== "LEFT") newDirection = "RIGHT";
           break;
         case "d":
+          if (lastDirection !== "LEFT") newDirection = "RIGHT";
+          break;
+        case "D":
           if (lastDirection !== "LEFT") newDirection = "RIGHT";
           break;
         default:
