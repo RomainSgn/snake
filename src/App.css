@@ -17,6 +17,7 @@ body {
   justify-content: center;
   grid-template-columns: repeat(30, 15px);
   grid-template-rows: repeat(30, 15px);
+  background-color: #ccc;
 }
 .btnStart {
   display: flex;
@@ -46,6 +47,7 @@ body {
 }
 .food {
   background-color: red;
+  border-radius: 100%;
 }
 .installContainer {
   background-color: gray;
