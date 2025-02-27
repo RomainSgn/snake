@@ -18,6 +18,8 @@ body {
   grid-template-columns: repeat(30, 15px);
   grid-template-rows: repeat(30, 15px);
   background-color: #ccc;
+  width: fit-content;
+  margin: auto auto;
 }
 .btnStart {
   display: flex;
